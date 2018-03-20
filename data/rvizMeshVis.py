@@ -10,7 +10,7 @@ def meshVisualization(orientationMesh, stlFile, posMesh=(0,0,0), scale=0.01):
 
 	while not rospy.is_shutdown():
 	    
-	    for i in range(5):
+	    for i in range(7):
 	        mesh = Marker()
 	        mesh.header.frame_id = 'world';
 	        mesh.ns = 'ns';

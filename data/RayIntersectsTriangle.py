@@ -15,10 +15,10 @@ from visualization_msgs.msg import Marker, MarkerArray
 #ray is a vector from Lighthouse to the sensor, should be d = SensorPosition - t * LighthousePosition
     #t is length of ray
 
-def rayIntersectsTriangleVisualization(origin, sensor, tri, LH_CSframe):
+def rayIntersectsTriangleVisual(origin, sensor, tri, LH_CSframe,j):
 
     topic = 'visualization_marker'
-    publisher = rospy.Publisher(topic, Marker, queue_size=1)
+    publisher = rospy.Publisher(topic, Marker, queue_size=1000)
        
     ray = sensor - origin
     v0 = tri[0:3]

@@ -35,9 +35,9 @@ def bestSensorVis(sensorDict, bestSensors, rate, color=(1,0,0,1),sphereSize=0.03
 	        markers.color.b = color[2]
 	        markers.color.a = color[3]
 
-	        markers.scale.x = 0.02
-	        markers.scale.y = 0.02
-	        markers.scale.z = 0.02
+	        markers.scale.x = sphereSize
+	        markers.scale.y = sphereSize
+	        markers.scale.z = sphereSize
 	        markers.lifetime = rospy.Duration(-1);
 	        markers.header.stamp = rospy.Time.now()
 	        markers.action = Marker.ADD
