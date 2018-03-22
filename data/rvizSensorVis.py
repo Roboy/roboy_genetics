@@ -41,7 +41,7 @@ def sensorVisualization(sensors,rate, sphereSize=0.01, color=(0,0,0,1)):
 	        markers.scale.x = 0.02
 	        markers.scale.y = 0.02
 	        markers.scale.z = 0.02
-	        markers.lifetime = rospy.Duration(-1);
+	        markers.lifetime = rospy.Duration(4);
 	        markers.header.stamp = rospy.Time.now()
 	        markers.action = Marker.ADD
 	        markers.id = 100+i
