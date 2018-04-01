@@ -1,3 +1,7 @@
+numpy
 numpy-stl
+scipy
+jupyter
+matplotlib
 deap
 pyquaternion
